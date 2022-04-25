@@ -1,0 +1,30 @@
+{
+    "productName": "personal-auto",
+    "fieldValues": {
+        "multiple_drivers": "No - Just Policyholder",
+        "atfault_claims_past_5_years": "None",
+        "10_year_felony_conviction": "No",
+        "insurance_fraud_conviction": "No",
+        "channel": "Agent"
+    },
+    "exposures": [
+        {
+            "exposureName": "vehicle",
+            "fieldValues": {
+                "vehicle_type": "Car",
+                "body_style": "4 door",
+                "make": "Audi",
+                "model": "A4",
+                "year": "2012",
+                "vehicle_value": "12000",
+                "license_plate": "123456"
+            },
+            "perils": [
+                {
+                    "name": "a_third_party_liability",
+                    "indemnityInAggregate": "0"
+                }
+            ]
+        }
+    ]
+}

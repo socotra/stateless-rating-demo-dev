@@ -1,0 +1,11 @@
+{
+	"documents": [
+		{
+			"displayName": "Renewal",
+			"fileName": "renewal.pdf",
+			"templateName": "renew.template.liquid",
+			"generatingEvent": "quote",
+			"type": "pdf"
+		}
+	]
+}
