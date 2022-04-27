@@ -12,17 +12,17 @@ function getRaterResultsForRequest(request) {
 test('rater returns expected result for no indemnity', () => {
     const raterResults = getRaterResultsForRequest(policyRequestNoIndemnity);
     const priceData = Object.entries(raterResults.pricedPerilCharacteristics)[0][1];
-    expect(priceData.yearlyPremium).toBe('133');
+    expect(priceData.exactPremium).toBe('133');
 });
 
 test('rater returns expected result for medium indemnity', () => {
     const raterResults = getRaterResultsForRequest(policyRequestMediumIndemnity);
     const priceData = Object.entries(raterResults.pricedPerilCharacteristics)[0][1];
-    expect(priceData.yearlyPremium).toBe('1133');
+    expect(priceData.exactPremium).toBe('1133');
 });
 
 test('rater returns expected result for high indemnity', () => {
     const raterResults = getRaterResultsForRequest(policyRequestHighIndemnity);
     const priceData = Object.entries(raterResults.pricedPerilCharacteristics)[0][1];
-    expect(priceData.yearlyPremium).toBe('5133');
+    expect(priceData.exactPremium).toBe('5133');
 });

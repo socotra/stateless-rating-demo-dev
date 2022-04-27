@@ -20,7 +20,6 @@ function getPerilRates(data) {
      * 
      * For instructional purposes, uses no convenience libraries
      */
-    const exposurePerils = data.policyExposurePerils;
     const policy = data.policy;
 
     /** 
@@ -70,7 +69,7 @@ function getPerilRates(data) {
 
     let pricingResult = {}
     pricingResult[perilCharacteristicsLocator] = {
-        yearlyPremium: '' + prem
+        exactPremium: '' + prem
     }
 
     return {
