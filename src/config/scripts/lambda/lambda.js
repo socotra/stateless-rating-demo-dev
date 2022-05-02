@@ -26,7 +26,7 @@ function getPricedPolicyResponse(policyResponse) {
         }
     }
 
-    policyResponse.grossPremium = grossPremium.toString();
+    policyResponse.characteristics[0].grossPremium = grossPremium.toString();
     return policyResponse;
 }
 

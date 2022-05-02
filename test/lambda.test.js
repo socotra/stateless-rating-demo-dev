@@ -10,9 +10,9 @@ test('lambda returns three priced policy results for an array of three creation 
            highIndemnityPricedPolicyResponse ] = lambdaResult;
     
     // checking `PolicyResponse.grossPremium`
-    expect(noIndemnityPricedPolicyResponse.grossPremium).toBe('133');
-    expect(mediumIndemnityPricedPolicyResponse.grossPremium).toBe('1133');
-    expect(highIndemnityPricedPolicyResponse.grossPremium).toBe('5133');
+    expect(noIndemnityPricedPolicyResponse.characteristics[0].grossPremium).toBe('133');
+    expect(mediumIndemnityPricedPolicyResponse.characteristics[0].grossPremium).toBe('1133');
+    expect(highIndemnityPricedPolicyResponse.characteristics[0].grossPremium).toBe('5133');
 
     // checking characteristic exposures pricing
     const noIndemnityPerilChar = noIndemnityPricedPolicyResponse.exposures[0].perils[0].characteristics[0];
