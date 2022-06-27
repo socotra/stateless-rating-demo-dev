@@ -1,14 +1,14 @@
 {
   "name": "stateless-rating-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo implementation for Socotra 'stateless rating'",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "makeLambdaRequest": "node ./test/makeLambdaRequest.js ./test/lambdaRequestBody.json"
   },
   "keywords": [],
-  "author": "",
+  "author": "Socotra",
   "license": "ISC",
   "devDependencies": {
     "jest": "^28.0.0"
